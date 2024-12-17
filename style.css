@@ -1,0 +1,53 @@
+.loader{
+    height: 200px;
+    width: 200px;
+    border: 20px solid rgb(5, 163, 134);
+    border-top: 20px solid rgb(224, 224, 10);
+    border-radius: 50%;
+    animation: spinanimate 3s ease-in-out 0s infinite normal;
+
+}
+@keyframes spinanimate{
+     from{
+        transform: rotate(0deg);
+     }
+     to{
+        transform: rotate(360deg);
+     }
+ }
+.loading{
+    width: 200px;
+    height: 50px;
+    left: 400px;
+    top:50px;
+    position: absolute;
+    border: 2px solid gray;
+    border-bottom: 5px solid gray;
+    background-color: blue;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-content: center;    
+    color: white;
+    box-shadow: 2px 2px 2px solid gray;
+    transition: all 2s ease-in ;
+}
+.loading:hover{
+    transform: translateY(500px);
+}
+
+.circle{
+width: 150px;
+height: 150px;
+border-radius: 50%;
+background-color: rgb(111, 1, 38);
+border: 5px solid black;
+box-shadow: 3px 2px 2px grey;
+transition: all 2s steps(5);
+}
+.circle:hover{
+    background-color:rgb(238, 195, 53);
+}
+.circle:active{
+    background-color: greenyellow ;
+}
